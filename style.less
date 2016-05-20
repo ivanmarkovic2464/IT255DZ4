@@ -1,0 +1,159 @@
+@crna: #000000;
+@plava: #0000ff;
+@zuta: #e6e600;
+@svetloplava: #3333ff;
+#home{
+height: 300px;
+width: 100%;
+margin: 0 auto;
+background: @crna repeat scroll 0% 0%;
+//border: 1px solid blue;
+}
+#gornjalinija{
+width: 100%;
+height: 11px;
+background: @svetloplava;
+border-bottom: 1px solid white;
+}
+#wrapperhome{
+width: 1000px;
+height: 100%;
+margin: 0 auto;
+}
+
+#homeSign{
+margin-top: 46px;
+float: left;
+}
+
+div{
+	img{
+	height: 300px; 
+	width: 400px;
+	}
+}
+#kratakOpis{
+	float: right;
+	color: white;
+	margin-top: 80px;
+	margin-right: 30px;
+}
+#menu{
+	width: 100%;
+	height: 100px;
+	margin: 17px 0 0 2px;
+	float: left;
+	padding-top: 48px;
+}
+.menuItem{
+	display: inline-block;
+	padding: 30px 45px 15px 29px;
+	margin-left: -5px;
+	font-size: 30px;
+	background: @crna;
+	border-bottom: 4px solid @plava;
+	
+	&:hover{
+	display: inline-block;
+	padding: 30px 45px 15px 29px;
+	margin-left: -5px;
+	font-size: 30px;
+	background: @plava;
+	color: @zuta;
+	border-bottom: 4px solid @zuta;
+	}
+	
+	&:active{
+	display: inline-block;
+	padding: 30px 45px 15px 29px;
+	margin-left: -5px;
+	font-size: 30px;
+	background: @plava;
+	color: #000000;
+	border-bottom: 4px solid #000000;
+	}
+}
+#mainWrapper{
+	margin-top: 500px;
+	background: @crna;
+	width: 1000px;
+	height: 800px;
+	/*border: 1px solid @plava;*/
+}
+#leftWrapper{
+	width: 650px;
+	height: 800px;
+	/*border: 1px solid @plava;*/
+}
+#rightWrapper{
+	background: @crna;
+    position: absolute;
+    right: 128px;
+    top: 521px;
+    width: 350px;
+	height: 800px;
+	border-left: 1px solid @plava;
+}
+#upper{
+	width: 650px;
+	height: 500px;
+	/*border-bottom: 1px solid #0000ff;
+	border-right: 1px solid #0000ff;*/
+}
+h1{
+	color: #e6e600;
+	margin-left: 15px;
+}
+video{
+	margin-left: 15px;
+}
+#p{
+	color: white; 
+	margin-left: 30px;
+	margin-top: 5px;
+	font-size: 18px;
+	margin-bottom: 15px;
+	text-transform:uppercase;
+	text-decoration: underline;
+	font-size: 16px;
+} 
+#lower{
+	width: 650px;
+	height: 300px;
+	border-bottom: 1px solid @plava;
+}
+strong{
+	color: @plava;
+	font-weight: bold;
+}
+.more-link{
+	width:80px;
+	height:30px;
+	padding:5px;
+	margin-top:10px;
+	margin-right: 30px;
+	background:#e6e600;
+	font-weight:bold;
+	color:@plava;
+	text-transform:uppercase;
+	float:right;
+	font-size:11px;		
+	&:hover{
+		background:@crna top repeat-x;
+	}
+}
+div{ 
+	ul{
+		li{
+			img{
+			height:100px;
+			width:100px;
+			}
+		}
+	}
+}	
+li{
+	p{
+	color: white;
+	}
+}

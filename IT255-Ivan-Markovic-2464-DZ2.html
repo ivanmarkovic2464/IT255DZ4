@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Hip Hop</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta charset="UTF-8">
+</head>
+<body style="background: black">
+<div id="home">
+<div id="wrapperhome">
+<div id="gornjalinija"/>
+<div id="homeSign">
+<img src="hip hop.jpg" />
+</div>
+<div id="kratakOpis">
+<h2> Kratko o hip hop-u </h2>
+<p>Hip hop je kulturni pokret koji je započeo među urbanim<br> Afro-Amerikancima, Jamajkancima i Portorikancima u Bronxu,<br> kvartu New Yorka, tijekom ranih 1970-ih i otad
+se proširio<br> po cijelom svijetu. Četiri glavna obilježja, ili "elementa",<br> hip hop kulture su MC-anje (repanje), DJ-anje, grafiti,<br> i breakdance.
+Neki smatraju beatbox petim elementom hip hopa.<br>Početkom 1990-ih hip hop dostiže popularnost rocka, a do<br> 2002. ga daleko prestiže u vidu popularnosti.
+</p>
+</div>
+<div id="menu">
+<a href = "#" onclick="home()"><div class = "menuItem">
+Home
+</div></a>
+<a href = "#" onclick="artists()"><div class = "menuItem">
+Artists
+</div></a>
+<a href = "#" onclick="music()"><div class = "menuItem">
+Music
+</div></a>
+<a href = "#"><div class = "menuItem">
+Hall of fame
+</div></a>
+<a href = "#"><div class = "menuItem">
+Dancing
+</div></a>
+<a href = "#"><div class = "menuItem">
+About
+</div></a>
+</div>
+</div>
+<div id="mainWrapper">
+<div id="leftWrapper">
+	<div id="upper">
+		<h1> Među najslušanijim hip hop pesmama </h1>
+		<video width="620px" height="400px" controls>
+		<source src="Ace Hood - Bugatti (Explicit) ft. Future, Rick Ross.webm" type="video/webm">
+		</video>
+		<p id="p">Ace Hood - Bugatti (Explicit) ft. Future, Rick Ross</p>
+	</div>
+	<div id="lower">
+		<h1> Istorija hip hopa </h1>
+		<p style="color:white; margin-left: 30px;">
+ Hip hop je vrstа muzičkog izrаzа i kulture kojа je nаstаlа u Afro-američkim
+ zаjednicаmа<br> tokom kаsnih 70-tih godinа prošlog vekа u Nju Jorku.
+ <strong>Afrika Bambaataa</strong>, koji se smаtrа jednim od tvorаcа hip hopа je ustаnovio
+ četiri osnovnа delа te kulture : <em>repovаnje</em>, <em>di-džejing</em>,<br> <em>hip hop ples
+ (brejk dens)</em> i <em>urbаnu umetnost, tj. grаfiti</em>. Pošto se pojаvilа u
+ Južnom Bronksu,<br> hip hop kulturа se proširilа celim svetom. Hip hop se
+ tokom godinа rаzvijаo i obuhvаtio<br> ne sаmo rep muziku, već ceo životni
+ stil koji se konstаntno sjedinjаvаo sа rаzličitim elementimа<br> tehnologije,
+ umetnosti i urbаnog životа. </p>
+		<p><button class="more-link" onclick="prozor()">Čitaj još</p>
+</div>
+</div>
+<div id="rightWrapper">
+<h1>Poznati umetnici</h1>
+	<ul id="lista">
+		<li><img src="eminem.jpg" /><p><strong>Eminem</strong><br>
+		Maršal Brus Meters III, široj javnosti poznatiji pod umetničkim imenom EMINEM (često stilizovano kao EMINƎM),
+		američki je reper, producent i glumac.</p></li>
+		<li><img src="drdre.jpg" /><p><strong>Dr. Dre</strong><br>
+		Dr. Dre je postao internacionalno poznat nakon što je skupa sa Suge Knightu 1992 osnovao Death Row Records.
+		Te iste godine je izdao za Death Row Records svoj prvi solo cd The Chronic.</p></li>
+		<li><img src="50cent.jpg" /><p><strong>50 Cent</strong><br>
+		Curtis James Jackson III bolje poznat kao 50 Cent, jedan je od najpoznatijih i najprodavanijih američkih repera, te osnivač i član grupe G-Unit.
+		</p></li>
+	</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+function prozor(){
+proz = window.open('https://sr.wikipedia.org/sr/%D0%A5%D0%B8%D0%BF_%D1%85%D0%BE%D0%BF','','','');
+}
+function artists(){
+var right = document.getElementById("rightWrapper");
+right.style.backgroundColor="gray";
+document.getElementById("lista").style.color="gray";
+}
+function music(){
+var up = document.getElementById("upper");
+up.style.backgroundColor="gray";
+}
+function home(){
+var right = document.getElementById("rightWrapper");
+right.style.backgroundColor="black";
+document.getElementById("lista").style.color="black";
+var up = document.getElementById("upper");
+up.style.backgroundColor="black";
+}
+</script>
+</body>
+</html>
